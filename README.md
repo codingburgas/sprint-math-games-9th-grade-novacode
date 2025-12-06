@@ -27,7 +27,7 @@ git clone https://github.com/codingburgas/sprint-math-games-9th-grade-novacode.g
 ```
 ### Executing program
 
-* Open `main.cpp` in your web browser to start using the website.
+* Type .\main.exe in your cmd to open the game!
 
 ## Technologies Used
 
