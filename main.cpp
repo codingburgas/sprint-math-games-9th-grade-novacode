@@ -51,5 +51,16 @@ void DrawHangman(int guessCount = 0)
     else
         PrintMessage("", false, false);
    }
+
+     if (guessCount >= 2)
+        PrintMessage("|", false, false);
+    else
+        PrintMessage("", false, false);
+
+    if (guessCount >= 3)
+        PrintMessage("O", false, false);
+    else
+        PrintMessage("", false, false);
+   
 }
 
