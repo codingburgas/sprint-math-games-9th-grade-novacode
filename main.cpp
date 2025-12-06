@@ -42,3 +42,14 @@ void PrintMessage(string message, bool printTop = true, bool printBottom = true)
     }
 }
 void DrawHangman(int guessCount = 0)
+{
+    
+    void DrawHangman(int guessCount = 0)
+{
+    if (guessCount >= 1)
+        PrintMessage("|", false, false);
+    else
+        PrintMessage("", false, false);
+   }
+}
+
