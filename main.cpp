@@ -62,11 +62,10 @@ void DrawHangman(int guessCount = 0)
     else
         PrintMessage("", false, false);
 
-    if (guessCount == 4)
+      if (guessCount == 4)
         PrintMessage("/  ", false, false);
 
     if (guessCount == 5)
         PrintMessage("/| ", false, false);
-   
 }
 
