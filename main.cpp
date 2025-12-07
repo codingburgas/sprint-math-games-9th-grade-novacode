@@ -122,3 +122,12 @@ void PrintAvailableLetters(string taken)
             won = false;
             s += "_ ";
         }
+        else
+        {
+            s += word[i];
+            s += " ";
+        }
+    }
+    PrintMessage(s, false);
+    return won;
+}
