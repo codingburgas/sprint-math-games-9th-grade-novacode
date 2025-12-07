@@ -67,5 +67,19 @@ void DrawHangman(int guessCount = 0)
 
     if (guessCount == 5)
         PrintMessage("/| ", false, false);
+
+     if (guessCount >= 6)
+        PrintMessage("/|", false, false);
+    else
+        PrintMessage("", false, false);
+
+    if (guessCount >= 7)
+        PrintMessage("|", false, false);
+    else
+        PrintMessage("", false, false);
+
+    if (guessCount == 8)
+        PrintMessage("/", false, false);
+    
 }
 
