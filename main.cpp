@@ -81,5 +81,24 @@ void DrawHangman(int guessCount = 0)
     if (guessCount == 8)
         PrintMessage("/", false, false);
     
+     if (guessCount >= 9)
+        PrintMessage("/ ", false, false);
+    else
+        PrintMessage("", false, false);
+}
+void PrintLetters(string input, char from, char to)
+{
+    string s;
+    for (char i = from; i <= to; i++)
+    {
+        if (input.find(i) == string::npos)
+        {
+            s += i;
+            s += " ";
+        }
+        else
+            s += "  ";
+    }    
+    
 }
 
