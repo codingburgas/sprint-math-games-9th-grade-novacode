@@ -146,3 +146,16 @@ void PrintAvailableLetters(string taken)
 
         word = v.at(randomLine);
         reader.close();
+           }
+    return word;
+}
+int TriesLeft(string word, string guessed)
+{
+    int error = 0;
+    for (int i = 0; i < guessed.length(); i++)
+    {
+        if (word.find(guessed[i]) == string::npos)
+            error++;
+    }
+    return error;
+}
