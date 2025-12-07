@@ -98,6 +98,7 @@ void PrintLetters(string input, char from, char to)
         }
         else
             s += "  ";
+<<<<<<< HEAD
     }    
     PrintMessage(s, false, false);
     {
@@ -119,13 +120,26 @@ void PrintAvailableLetters(string taken)
 }
 
     }
+=======
+    }
+    
+    PrintMessage(s, false, false);
+    {
+
+>>>>>>> d9c61eb9d695d8724f98a2def78b95d6d80bcf0f
 void PrintAvailableLetters(string taken)
 {
     PrintMessage("Available letters");
     PrintLetters(taken, 'A', 'M');
     PrintLetters(taken, 'N', 'Z');
 }
+<<<<<<< HEAD
 bool PrintWordAndCheckWin(string word, string guessed)
+=======
+    
+    }
+    bool PrintWordAndCheckWin(string word, string guessed)
+>>>>>>> d9c61eb9d695d8724f98a2def78b95d6d80bcf0f
 {
     bool won = true;
     string s;
@@ -145,12 +159,20 @@ bool PrintWordAndCheckWin(string word, string guessed)
     PrintMessage(s, false);
     return won;
 }
+<<<<<<< HEAD
 string LoadRandomWord(string path)
+=======
+    string LoadRandomWord(string path)
+>>>>>>> d9c61eb9d695d8724f98a2def78b95d6d80bcf0f
 {
     int lineCount = 0;
     string word;
     vector<string> v;
+<<<<<<< HEAD
     ifstream reader(path);
+=======
+       ifstream reader(path);
+>>>>>>> d9c61eb9d695d8724f98a2def78b95d6d80bcf0f
     if (reader.is_open())
     {
         while (std::getline(reader, word))
@@ -160,7 +182,11 @@ string LoadRandomWord(string path)
 
         word = v.at(randomLine);
         reader.close();
+<<<<<<< HEAD
     }
+=======
+           }
+>>>>>>> d9c61eb9d695d8724f98a2def78b95d6d80bcf0f
     return word;
 }
 int TriesLeft(string word, string guessed)
@@ -172,6 +198,7 @@ int TriesLeft(string word, string guessed)
             error++;
     }
     return error;
+<<<<<<< HEAD
 }
     int main()
 {
@@ -214,3 +241,6 @@ int TriesLeft(string word, string guessed)
 }
 
 
+=======
+}
+>>>>>>> d9c61eb9d695d8724f98a2def78b95d6d80bcf0f
