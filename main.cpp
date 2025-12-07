@@ -98,7 +98,27 @@ void PrintLetters(string input, char from, char to)
         }
         else
             s += "  ";
-    }    
+    }
     
-}
+    PrintMessage(s, false, false);
+    {
 
+void PrintAvailableLetters(string taken)
+{
+    PrintMessage("Available letters");
+    PrintLetters(taken, 'A', 'M');
+    PrintLetters(taken, 'N', 'Z');
+}
+    
+    }
+    bool PrintWordAndCheckWin(string word, string guessed)
+{
+    bool won = true;
+    string s;
+    for (int i = 0; i < word.length(); i++)
+    {
+        if (guessed.find(word[i]) == string::npos)
+        {
+            won = false;
+            s += "_ ";
+        }
