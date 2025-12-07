@@ -131,8 +131,18 @@ void PrintAvailableLetters(string taken)
     PrintMessage(s, false);
     return won;
 }
-string LoadRandomWord(string path)
+    string LoadRandomWord(string path)
 {
     int lineCount = 0;
     string word;
     vector<string> v;
+       ifstream reader(path);
+    if (reader.is_open())
+    {
+        while (std::getline(reader, word))
+            v.push_back(word);
+
+ int randomLine = rand() % v.size();
+
+        word = v.at(randomLine);
+        reader.close();
