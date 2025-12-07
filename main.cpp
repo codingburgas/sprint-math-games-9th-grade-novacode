@@ -131,3 +131,8 @@ void PrintAvailableLetters(string taken)
     PrintMessage(s, false);
     return won;
 }
+string LoadRandomWord(string path)
+{
+    int lineCount = 0;
+    string word;
+    vector<string> v;
