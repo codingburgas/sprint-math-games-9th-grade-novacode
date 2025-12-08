@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="NovaCode/NovaCode.vcxproj" Id="30d4df1c-227e-48c9-b8e8-9a6c31413bc2" />
+</Solution>

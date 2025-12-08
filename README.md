@@ -3,6 +3,11 @@ NovaCode
 </h1>
 
 
+<div align="center">
+<img src="images/logo.png" width="200" style="margin: 1rem 0; border-radius: 1.5rem;" >
+</div>
+
+
 ## Table of Contents
 
 - [Description](#description)
@@ -27,7 +32,7 @@ git clone https://github.com/codingburgas/sprint-math-games-9th-grade-novacode.g
 ```
 ### Executing program
 
-* Type .\main.exe in your cmd to open the game!
+* Open NovaCode.slnx with visual stuio to run the game. 
 
 ## Technologies Used
 
@@ -36,13 +41,14 @@ git clone https://github.com/codingburgas/sprint-math-games-9th-grade-novacode.g
 <img src="images/githublogo.png" alt="Technologies Used" width="100" style="margin: 1rem 0; border-radius: 1.5rem;">
 <img src="images/powerplogo.png" alt="Technologies Used" width="100" style="margin: 1rem 0; border-radius: 1.5rem;">
 <img src="images/teamslogo.webp" alt="Technologies Used" width="100" style="margin: 1rem 0; border-radius: 1.5rem;">
+<img src="images/cpplogo.png" alt="Technologies Used" width="90" style="margin: 1rem 0; border-radius: 1.5rem;">
 </p>
 
 ## Authors
 
 Contributors names and contact info
 
-- Angel Friederich (Scrum Trainer) - APFriedirich24@codingburgas.bg
-- Dimitar Yanakiev (FrontEnd Developer) - DVYanakiev24@codingburgas.bg
-- Georgi Hristov (Backend Developer) - VHGeorgiev24@codingburgas.bg
-- Viktor Geogriev (Designer) - 24@codingburgas.bg
+- Scrum Trainer - [APFriedirich24](https://github.com/APFriedirich24)
+- Front-end Developer - [DVYanakiev24](https://github.com/DVYanakiev24)
+- Back-end Developer - [VHGeorgiev24](https://github.com/VHGeorgiev24)
+- Designer - [VHGeorgiev24](https://github.com/VHGeorgiev24)

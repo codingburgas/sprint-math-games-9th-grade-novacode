@@ -4,7 +4,6 @@
 #include <string>
 #include <time.h>
 using namespace std;
-
 void PrintMessage(string message, bool printTop = true, bool printBottom = true)
 {
     if (printTop)
@@ -43,16 +42,12 @@ void PrintMessage(string message, bool printTop = true, bool printBottom = true)
 }
 void DrawHangman(int guessCount = 0)
 {
-    
-    void DrawHangman(int guessCount = 0)
-{
     if (guessCount >= 1)
         PrintMessage("|", false, false);
     else
         PrintMessage("", false, false);
-   }
 
-     if (guessCount >= 2)
+    if (guessCount >= 2)
         PrintMessage("|", false, false);
     else
         PrintMessage("", false, false);
@@ -62,14 +57,14 @@ void DrawHangman(int guessCount = 0)
     else
         PrintMessage("", false, false);
 
-      if (guessCount == 4)
+    if (guessCount == 4)
         PrintMessage("/  ", false, false);
 
     if (guessCount == 5)
         PrintMessage("/| ", false, false);
 
-     if (guessCount >= 6)
-        PrintMessage("/|", false, false);
+    if (guessCount >= 6)
+        PrintMessage("/|\\", false, false);
     else
         PrintMessage("", false, false);
 
@@ -80,9 +75,9 @@ void DrawHangman(int guessCount = 0)
 
     if (guessCount == 8)
         PrintMessage("/", false, false);
-    
-     if (guessCount >= 9)
-        PrintMessage("/ ", false, false);
+
+    if (guessCount >= 9)
+        PrintMessage("/ \\", false, false);
     else
         PrintMessage("", false, false);
 }
@@ -98,48 +93,16 @@ void PrintLetters(string input, char from, char to)
         }
         else
             s += "  ";
-<<<<<<< HEAD
-    }    
+    }
     PrintMessage(s, false, false);
-    {
-
+}
 void PrintAvailableLetters(string taken)
 {
     PrintMessage("Available letters");
     PrintLetters(taken, 'A', 'M');
     PrintLetters(taken, 'N', 'Z');
 }
-
-    }
-
-    void PrintAvailableLetters(string taken)
-{
-    PrintMessage("Available letters");
-    PrintLetters(taken, 'A', 'M');
-    PrintLetters(taken, 'N', 'Z');
-}
-
-    }
-=======
-    }
-    
-    PrintMessage(s, false, false);
-    {
-
->>>>>>> d9c61eb9d695d8724f98a2def78b95d6d80bcf0f
-void PrintAvailableLetters(string taken)
-{
-    PrintMessage("Available letters");
-    PrintLetters(taken, 'A', 'M');
-    PrintLetters(taken, 'N', 'Z');
-}
-<<<<<<< HEAD
 bool PrintWordAndCheckWin(string word, string guessed)
-=======
-    
-    }
-    bool PrintWordAndCheckWin(string word, string guessed)
->>>>>>> d9c61eb9d695d8724f98a2def78b95d6d80bcf0f
 {
     bool won = true;
     string s;
@@ -159,34 +122,22 @@ bool PrintWordAndCheckWin(string word, string guessed)
     PrintMessage(s, false);
     return won;
 }
-<<<<<<< HEAD
 string LoadRandomWord(string path)
-=======
-    string LoadRandomWord(string path)
->>>>>>> d9c61eb9d695d8724f98a2def78b95d6d80bcf0f
 {
     int lineCount = 0;
     string word;
     vector<string> v;
-<<<<<<< HEAD
     ifstream reader(path);
-=======
-       ifstream reader(path);
->>>>>>> d9c61eb9d695d8724f98a2def78b95d6d80bcf0f
     if (reader.is_open())
     {
         while (std::getline(reader, word))
             v.push_back(word);
 
- int randomLine = rand() % v.size();
+        int randomLine = rand() % v.size();
 
         word = v.at(randomLine);
         reader.close();
-<<<<<<< HEAD
     }
-=======
-           }
->>>>>>> d9c61eb9d695d8724f98a2def78b95d6d80bcf0f
     return word;
 }
 int TriesLeft(string word, string guessed)
@@ -198,9 +149,8 @@ int TriesLeft(string word, string guessed)
             error++;
     }
     return error;
-<<<<<<< HEAD
 }
-    int main()
+int main()
 {
     srand(time(0));
     string guesses;
@@ -210,7 +160,7 @@ int TriesLeft(string word, string guessed)
     bool win = false;
     do
     {
-        system("cls");
+        system("cls"); 
         PrintMessage("HANGMAN");
         DrawHangman(tries);
         PrintAvailableLetters(guesses);
@@ -235,12 +185,7 @@ int TriesLeft(string word, string guessed)
     else
         PrintMessage("GAME OVER");
 
-    system("pause");
+    system("pause"); 
     getchar();
     return 0;
 }
-
-
-=======
-}
->>>>>>> d9c61eb9d695d8724f98a2def78b95d6d80bcf0f
