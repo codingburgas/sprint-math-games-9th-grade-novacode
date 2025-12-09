@@ -50,5 +50,5 @@ Contributors names and contact info
 
 - Scrum Trainer - [APFriedirich24](https://github.com/APFriedirich24)
 - Front-end Developer - [DVYanakiev24](https://github.com/DVYanakiev24)
-- Back-end Developer - [VHGeorgiev24](https://github.com/VHGeorgiev24)
+- Back-end Developer - [GIHristov24](https://github.com/GIHristov24)
 - Designer - [VHGeorgiev24](https://github.com/VHGeorgiev24)
